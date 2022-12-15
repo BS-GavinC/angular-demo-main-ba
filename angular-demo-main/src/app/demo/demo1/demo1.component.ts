@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class Demo1Component {
 
+  monTexte : string = 'Bonjour tout le monde !'
+
+  monEvenement = () => {
+    this.monTexte = 'Oups le bouton a changé ma valeur'
+  }
+
+  monTextAValider : string = ''
+
+
+
+
 }

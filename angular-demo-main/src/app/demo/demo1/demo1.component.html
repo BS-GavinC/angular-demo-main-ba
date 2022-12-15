@@ -1,1 +1,16 @@
-<p>demo1 works!</p>
+<h1>Property Binding</h1>
+
+<input type="text" [(ngModel)]="monTexte">
+
+<p>{{monTexte}}</p>
+
+
+<H1>Event Binding</H1>
+
+<button (click)="monEvenement()">Creer evenement !</button>
+
+<h1>Attribute Binding</h1>
+
+<input type="text" [(ngModel)]="monTextAValider">
+
+<button [disabled]="monTextAValider == ''" [textContent]="monTextAValider == '' ? 'Pas Valide' : 'Valide'"></button>

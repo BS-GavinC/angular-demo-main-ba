@@ -1,0 +1,20 @@
+
+
+<h1>Exemple NG IF (*ngIf)</h1>
+
+<button (click)="isActive = !isActive">Click Me</button>
+
+<h3 *ngIf="isActive">SUPER JE SUIS ACTIF</h3>
+
+
+<h1>Exemple NG FOR (*ngFor)</h1>
+
+
+<h3>User list</h3>
+<ul>
+  <li *ngFor="let user of users" >
+
+    <p>{{user.name}} - {{user.lastname}} - {{user.age}}</p>
+
+  </li>
+</ul>

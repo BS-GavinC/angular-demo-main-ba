@@ -9,6 +9,7 @@ import { DemoBannerComponent } from './demo/demo-banner/demo-banner.component';
 import { Demo1Component } from './demo/demo1/demo1.component';
 import { Exercice1Component } from './exercice/exercice1/exercice1.component';
 import { FormsModule } from '@angular/forms';
+import { Demo2Component } from './demo/demo2/demo2.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { FormsModule } from '@angular/forms';
     ExerciceBannerComponent,
     DemoBannerComponent,
     Demo1Component,
-    Exercice1Component
+    Exercice1Component,
+    Demo2Component
   ],
   imports: [
     BrowserModule,

@@ -7,6 +7,8 @@ import { Component } from '@angular/core';
 })
 export class Demo1Component {
 
+
+
   monTexte : string = 'Bonjour tout le monde !'
 
   monEvenement = () => {
@@ -14,6 +16,8 @@ export class Demo1Component {
   }
 
   monTextAValider : string = ''
+
+
 
 
 

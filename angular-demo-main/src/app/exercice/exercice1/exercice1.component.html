@@ -1,1 +1,9 @@
-<p>exercice1 works!</p>
+<h1>Chronometre</h1>
+
+
+<h2>{{minute}} Minutes - {{seconde}} Secondes</h2>
+
+<br>
+<button [disabled]="isCounting" (click)="start()">Start</button>
+<button [disabled]="!isCounting" (click)="pause()">Pause</button>
+<button (click)="reset()">Reset</button>

@@ -1,16 +1,30 @@
 <h1>Property Binding</h1>
 
+<!-- set la valeur dans la variable donné en TS -->
+
 <input type="text" [(ngModel)]="monTexte">
+
+
+<!-- Insert la valeur d'une variable dans le fichier TS -->
 
 <p>{{monTexte}}</p>
 
 
 <H1>Event Binding</H1>
 
+<!-- Permet d'executer une action lors d'un event => ici un "click" -->
+
 <button (click)="monEvenement()">Creer evenement !</button>
 
 <h1>Attribute Binding</h1>
 
+<!-- set la valeur dans la variable donné en TS -->
+
 <input type="text" [(ngModel)]="monTextAValider">
 
+<!-- Permet de changer les valeur d'un attibut grace a du code => ici les attributs concernent le bouton -->
+
 <button [disabled]="monTextAValider == ''" [textContent]="monTextAValider == '' ? 'Pas Valide' : 'Valide'"></button>
+
+
+

@@ -8,8 +8,10 @@ import { ExerciceBannerComponent } from './exercice/exercice-banner/exercice-ban
 import { DemoBannerComponent } from './demo/demo-banner/demo-banner.component';
 import { Demo1Component } from './demo/demo1/demo1.component';
 import { Exercice1Component } from './exercice/exercice1/exercice1.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { Demo2Component } from './demo/demo2/demo2.component';
+import { Demo3Component } from './demo/demo3/demo3.component';
+import { Demo4Component } from './demo/demo4/demo4.component';
 
 @NgModule({
   declarations: [
@@ -19,12 +21,15 @@ import { Demo2Component } from './demo/demo2/demo2.component';
     DemoBannerComponent,
     Demo1Component,
     Exercice1Component,
-    Demo2Component
+    Demo2Component,
+    Demo3Component,
+    Demo4Component
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

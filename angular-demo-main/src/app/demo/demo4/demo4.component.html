@@ -1,0 +1,22 @@
+<h1>Formulaire</h1>
+
+
+<form [formGroup]="formGroup" (ngSubmit)="Submit()">
+
+  <p>pseudo</p>
+  <input type="text" formControlName="pseudo">
+
+  <p>Email</p>
+  <input type="text" formControlName="email">
+
+  <p>password</p>
+  <input type="password" formControlName="password">
+
+  <p>confirmation password</p>
+  <input type="password" formControlName="passwordConfirmation">
+
+  <input type="submit" [disabled]="!formGroup.valid">
+
+</form>
+
+<p *ngIf="ErrorMessage != ''">{{ErrorMessage}}</p>
